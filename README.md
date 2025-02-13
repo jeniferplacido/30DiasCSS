@@ -42,7 +42,7 @@ Aqui está a lista de desafios que vocês vão encarar! 🚀
 
 | 🔢 Dia | 📌 Projeto                                         |
 | ----- | ------------------------------------------------- |
-| 01    | ![Ícone Mídia Social](../30DiasCSS/img/Dia1.gif) Ícone de mídia social em camadas |
+| 01    | ![Ícone Mídia Social](./img/Dia1.gif) Ícone de mídia social em camadas |
 | 02    | Loader animado                                |
 | 03    | Mudança de cor de texto quando entra em outra div |
 | 04    | Botão com efeito                                  |
