@@ -1,0 +1,110 @@
+/* Reset Padrão */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Define o box-sizing como border-box para todos os elementos */
+}
+
+body {
+    display: flex; /* Define o display como flex */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura do body como 100% da altura da viewport */
+    background: #000000; /* Define a cor de fundo do body */
+    font-family: Arial, sans-serif; /* Define a fonte padrão do body */
+}
+
+/* Container dos Ícones */
+.social-container {
+    display: flex; /* Define o display como flex */
+    gap: 25px; /* Define um espaçamento de 25px entre os itens */
+}
+
+/* Ícones de Mídia Social */
+.social-icon {
+    position: relative; /* Define a posição como relativa */
+    width: 90px; /* Define a largura do ícone */
+    height: 90px; /* Define a altura do ícone */
+    border-radius: 15px; /* Define bordas arredondadas */
+    display: flex; /* Define o display como flex */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    font-size: 36px; /* Define o tamanho da fonte */
+    text-decoration: none; /* Remove a decoração do texto */
+    color: #fff; /* Define a cor do texto */
+    overflow: hidden; /* Oculta o conteúdo que ultrapassa os limites do ícone */
+    transition: transform 0.3s ease-in-out; /* Define a transição para o efeito de transformação */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Define a sombra do ícone */
+}
+
+/* Criando as camadas */
+.layer {
+    position: absolute; /* Define a posição como absoluta */
+    width: 100%; /* Define a largura como 100% */
+    height: 100%; /* Define a altura como 100% */
+    border-radius: 15px; /* Define bordas arredondadas */
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out; /* Define a transição para transformação e opacidade */
+    z-index: -1; /* Define o índice z */
+}
+
+/* Primeira camada - mais escura */
+.layer-1 {
+    background: rgba(255, 255, 255, 0.1); /* Define a cor de fundo com opacidade */
+}
+
+/* Segunda Camada - Efeito intermediário */
+.layer-2 {
+    background: rgba(255, 255, 255, 0.2); /* Define a cor de fundo com opacidade */
+    transform: scale(1.3); /* Aumenta o tamanho da camada */
+    opacity: 0; /* Define a opacidade como 0 */
+}
+
+/* Terceira Camada - Efeito mais amplo */
+.layer-3 {
+    background: rgba(255, 255, 255, 0.3); /* Define a cor de fundo com opacidade */
+    transform: scale(1.6); /* Aumenta o tamanho da camada */
+    opacity: 0; /* Define a opacidade como 0 */
+}
+
+/* Efeito Hover - Criando a sobreposição */
+.social-icon:hover .layer-1 {
+    transform: scale(1.1); /* Aumenta o tamanho da camada ao passar o mouse */
+}
+
+.social-icon:hover .layer-2 {
+    transform: scale(1.4); /* Aumenta o tamanho da camada ao passar o mouse */
+    opacity: 0.5; /* Define a opacidade ao passar o mouse */
+}
+
+.social-icon:hover .layer-3 {
+    transform: scale(1.8); /* Aumenta o tamanho da camada ao passar o mouse */
+    opacity: 0.3; /* Define a opacidade ao passar o mouse */
+}
+
+/* Efeito de escala ao passar o mouse */
+.social-icon:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
+}
+
+/* Cores Individuais dos Ícones */
+.facebook {
+    background: #3b5998; /* Define a cor de fundo do ícone do Facebook */
+}
+
+.twitter {
+    background: #1da1f2; /* Define a cor de fundo do ícone do Twitter */
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); /* Define a cor de fundo do ícone do Instagram */
+}
+
+.linkedin {
+    background: #0077b5; /* Define a cor de fundo do ícone do LinkedIn */
+}
+
+/* Ícones dentro das bolinhas */
+.social-icon i {
+    position: relative; /* Define a posição como relativa */
+    z-index: 1; /* Define o índice z */
+}
