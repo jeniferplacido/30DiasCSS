@@ -1,0 +1,46 @@
+body {
+    display: flex; /* Define o display como flex */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura do body como 100% da altura da viewport */
+    background-color: #1a1a2e; /* Define a cor de fundo do body */
+    font-family: Arial, sans-serif; /* Define a fonte padrão do body */
+}
+
+.container {
+    text-align: center; /* Centraliza o texto dentro do container */
+}
+
+.btn {
+    padding: 15px 30px; /* Define o preenchimento interno do botão */
+    font-size: 18px; /* Define o tamanho da fonte do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 8px; /* Define bordas arredondadas para o botão */
+    background-color: #ff5733; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão */
+    cursor: pointer; /* Define o cursor como pointer ao passar o mouse */
+    transition: all 0.3s ease; /* Define a transição para todas as propriedades */
+    position: relative; /* Define a posição como relativa */
+    overflow: hidden; /* Oculta o conteúdo que ultrapassa os limites do botão */
+}
+
+.btn::after {
+    content: ""; /* Adiciona um conteúdo vazio após o botão */
+    position: absolute; /* Define a posição como absoluta */
+    top: 0; /* Define a posição superior como 0 */
+    left: 0; /* Define a posição esquerda como 0 */
+    width: 100%; /* Define a largura como 100% */
+    height: 100%; /* Define a altura como 100% */
+    background: rgba(255, 255, 255, 0.2); /* Define a cor de fundo com opacidade */
+    transform: scaleX(0); /* Define a escala horizontal como 0 */
+    transform-origin: left; /* Define a origem da transformação como a esquerda */
+    transition: transform 0.3s ease; /* Define a transição para a transformação */
+}
+
+.btn:hover::after {
+    transform: scaleX(1); /* Aumenta a escala horizontal ao passar o mouse */
+}
+
+.btn:hover {
+    background-color: #c70039; /* Altera a cor de fundo do botão ao passar o mouse */
+}

@@ -1,0 +1,33 @@
+body {
+    display: flex; /* Define o display como flex */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura do body como 100% da altura da viewport */
+    background-color: #1a1a2e; /* Define a cor de fundo do body */
+    font-family: Arial, sans-serif; /* Define a fonte padrão do body */
+}
+
+.container {
+    display: flex; /* Define o display como flex */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    width: 300px; /* Define a largura do container */
+    height: 150px; /* Define a altura do container */
+    background-color: #ffffff; /* Define a cor de fundo do container */
+    border-radius: 10px; /* Define bordas arredondadas */
+    transition: background-color 0.3s; /* Define a transição para a cor de fundo */
+}
+
+.text {
+    font-size: 20px; /* Define o tamanho da fonte */
+    color: #333; /* Define a cor do texto */
+    transition: color 0.3s; /* Define a transição para a cor do texto */
+}
+
+.container:hover {
+    background-color: #ff5733; /* Altera a cor de fundo ao passar o mouse */
+}
+
+.container:hover .text {
+    color: #ffffff; /* Altera a cor do texto ao passar o mouse */
+}

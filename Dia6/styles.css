@@ -1,0 +1,39 @@
+body {
+    display: flex; /* Define o display como flex */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura do body como 100% da altura da viewport */
+    background-color: #0d0d0d; /* Define a cor de fundo do body */
+    font-family: Arial, sans-serif; /* Define a fonte padrão do body */
+    color: #ffffff; /* Define a cor do texto */
+}
+
+.container {
+    position: relative; /* Define a posição como relativa */
+}
+
+.smoke-text {
+    font-size: 4em; /* Define o tamanho da fonte */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    text-transform: uppercase; /* Transforma o texto para maiúsculas */
+    color: #ffcc00; /* Define a cor do texto */
+    position: relative; /* Define a posição como relativa */
+    animation: smoke 3s infinite; /* Aplica a animação de fumaça */
+}
+
+@keyframes smoke {
+    0% {
+        opacity: 1; /* Define a opacidade inicial */
+        text-shadow: 0 0 10px #ff5733, 0 0 20px #ffcc00, 0 0 30px #ff5733; /* Define a sombra inicial do texto */
+    }
+    50% {
+        opacity: 0.5; /* Define a opacidade no meio da animação */
+        text-shadow: 0 0 20px #ffcc00, 0 0 40px #ff5733, 0 0 60px #ffcc00; /* Altera a sombra do texto no meio da animação */
+        transform: translateY(-10px); /* Move o texto para cima no meio da animação */
+    }
+    100% {
+        opacity: 0; /* Define a opacidade final */
+        text-shadow: 0 0 30px #ffcc00, 0 0 50px #ff5733, 0 0 70px #ffcc00; /* Define a sombra final do texto */
+        transform: translateY(-20px); /* Move o texto mais para cima no final da animação */
+    }
+}
