@@ -44,10 +44,11 @@ Aqui está a lista de desafios que vocês vão encarar! 🚀
 | ----- | ------------------------------------------------- |
 | 01    | ![Ícone Mídia Social](./img/Dia1.gif) Ícone de mídia social em camadas |
 | 02    | ![Loader animado](./img/Dia2.gif) Loader animado                                |
-| 03    | ![Mudança de cor de texto](./img/Dia3.gif) Mudança de cor de texto quando entra em outra div |
-| 04    | ![Botão com Efeito](../img/Dia4.gif) Botão com efeito                                  |
-| 05    | ![Efeito Pulsar](../img/Dia5.gif) Efeito pulsar                                     |
-| 06    | ![Efeito Smoke Text](../img/Dia6.gif) Efeito Smoke text                                 |
+| 03    | ![Mudança de cor de texto](./img/Dia3.gif) 
+Mudança de cor de texto quando entra em outra div |
+| 04    | ![Botão com Efeito](./img/Dia4.gif) Botão com efeito                                  |
+| 05    | ![Efeito Pulsar](./img/Dia5.gif) Efeito pulsar                                     |
+| 06    | ![Efeito Smoke Text](./img/Dia6.gif) Efeito Smoke text                                 |
 | 07    | Efeito lightning text                             |
 | 08    | Preloader Animado                                 |
 | 09    | Pêndulo de Newton                                 |
